@@ -26,7 +26,7 @@ class AsyncTrace:
         self.api_token = api_token
         if not session:
             self.aio_session = aiohttp.ClientSession(
-                headers = {"Content-Type": "application/json"}
+                # headers = {"Content-Type": "application/json"}
             )
         else:
             self.aio_session = session
